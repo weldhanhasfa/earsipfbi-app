@@ -37,6 +37,14 @@ Route::get('/distribusi', function () {
     return view('distribusi.index');
 });
 
+Route::get('/distribusi/create', function () {
+    return view('distribusi.create');
+});
+
+Route::get('/distribusi/edit', function () {
+    return view('distribusi.edit');
+});
+
 Route::get('/terbitan', function () {
     return view('terbitan.index');
 });
