@@ -49,6 +49,14 @@ Route::get('/terbitan', function () {
     return view('terbitan.index');
 });
 
+Route::get('/terbitan/create', function () {
+    return view('terbitan.create');
+});
+
+Route::get('/terbitan/edit', function () {
+    return view('terbitan.edit');
+});
+
 Route::get('/login', function () {
     return view('auth.login');
 });
