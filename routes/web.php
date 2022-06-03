@@ -56,3 +56,11 @@ Route::get('/login', function () {
 Route::get('/jenis', function () {
     return view('jenis.index');
 });
+
+Route::get('/jenis/create', function () {
+    return view('jenis.create');
+});
+
+Route::get('/jenis/edit', function () {
+    return view('jenis.edit');
+});

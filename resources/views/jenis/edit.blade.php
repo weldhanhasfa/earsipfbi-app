@@ -2,14 +2,21 @@
     <div class="col-12">
       <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Edit Data Departement</h3>
+            <h3 class="card-title">Edit Data Jenis Document</h3>
         </div>
         <div class="card-body">
-            
+            <div class="mb-3">
+                <label class="form-label">Jenis Document</label>
+                <input type="text" class="form-control" name="jenisDoc" placeholder="Jenis Document">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Keterangan</label>
+                <input type="text" class="form-control" name="keterangan" placeholder="Keterangan">
+            </div>
         </div>
         <div class="card-footer">
             <div class="d-flex">
-              <a href="#" class="btn btn-link">Cancel</a>
+              <a href="/jenis" class="btn btn-link">Cancel</a>
               <a href="#" class="btn btn-primary ms-auto">Edit Data</a>
             </div>
           </div>
