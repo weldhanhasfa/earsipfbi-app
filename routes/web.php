@@ -21,6 +21,14 @@ Route::get('/departement', function () {
     return view('departement.index');
 });
 
+Route::get('/departement/create', function () {
+    return view('departement.create');
+});
+
+Route::get('/departement/edit', function () {
+    return view('departement.edit');
+});
+
 Route::get('/document', function () {
     return view('document.index');
 });
