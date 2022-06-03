@@ -33,6 +33,14 @@ Route::get('/document', function () {
     return view('document.index');
 });
 
+Route::get('/document/create', function () {
+    return view('document.create');
+});
+
+Route::get('/document/edit', function () {
+    return view('document.edit');
+});
+
 Route::get('/distribusi', function () {
     return view('distribusi.index');
 });
