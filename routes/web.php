@@ -14,5 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/departement', function () {
+    return view('departement.index');
+});
+
+Route::get('/document', function () {
+    return view('document.index');
+});
+
+Route::get('/distribusi', function () {
+    return view('distribusi.index');
+});
+
+Route::get('/terbitan', function () {
+    return view('terbitan.index');
+});
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/jenis', function () {
+    return view('jenis.index');
 });
