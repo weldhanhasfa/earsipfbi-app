@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDistribusisTable extends Migration
+class CreateDitribusisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,18 +16,18 @@ class CreateDistribusisTable extends Migration
         Schema::create('distribusis', function (Blueprint $table) {
             $table->id();
             $table->foreignId('document_id')
-                    ->constrained('documents')
-                    ->cascadeOnDelete()
-                    ->cascadeOnUpdate();
+                ->constrained('documents')
+                ->cascadeOnDelete()
+                ->cascadeOnUpdate();
             $table->string('tanggal');
             $table->foreignId('terbitan_id')
-                    ->constrained('terbitans')
-                    ->cascadeOnDelete()
-                    ->cascadeOnUpdate();
+                ->constrained('terbitans')
+                ->cascadeOnDelete()
+                ->cascadeOnUpdate();
             $table->foreignId('departement_id')
-                    ->constrained('departements')
-                    ->cascadeOnDelete()
-                    ->cascadeOnUpdate();
+                ->constrained('departements')
+                ->cascadeOnDelete()
+                ->cascadeOnUpdate();
             $table->string('namaPenerima');
             $table->integer('copyFile');
             $table->timestamps();
@@ -41,6 +41,6 @@ class CreateDistribusisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('distribusis');
+        Schema::dropIfExists('ditribusis');
     }
 }

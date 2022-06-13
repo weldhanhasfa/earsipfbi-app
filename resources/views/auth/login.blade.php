@@ -26,8 +26,7 @@
         <div class="text-center mb-4">
           <a href="." class="navbar-brand navbar-brand-autodark">{{ config('app.name') }}</a>
         </div>
-        {{-- {{ route('login') }} --}}
-        <form class="card card-md" action="  " method="post" autocomplete="off">
+        <form class="card card-md" action="{{ route('login') }}" method="post" autocomplete="off">
             @csrf
           <div class="card-body">
             <h2 class="card-title text-center mb-4">Login to your account</h2>
@@ -49,8 +48,7 @@
               </div>
             </div>
             <div class="form-footer">
-              <a href="/" class="btn btn-primary w-100">Log in</a>
-              {{-- <button type="submit" class="btn btn-primary w-100">Log in</button> --}}
+              <button type="submit" class="btn btn-primary w-100">Log in</button>
             </div>
           </div>
         </form>

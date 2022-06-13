@@ -11,7 +11,7 @@
  <script src="{{asset('dist/js/demo.min.js')}}"></script>
 
 <script>
-    $('#logout' ).click(function (e) {
+    $('#logout').click(function (e) {
         e.preventDefault()
         $.ajax({
             type: 'POST',

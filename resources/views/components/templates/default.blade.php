@@ -27,11 +27,12 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-link link-secondary me-auto" data-bs-dismiss="modal">Cancel</button>
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="logout">Yes, delete all my data</button>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="logout">Yes, Logout</button>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- Modal -->
             </div>
           </div>
         </div>
