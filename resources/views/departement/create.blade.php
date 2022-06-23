@@ -4,22 +4,25 @@
         <div class="card-header">
             <h3 class="card-title">Tambah Data Departement</h3>
         </div>
-        <div class="card-body">
-            <div class="mb-3">
-                <label class="form-label">Nama Departement</label>
-                <input type="text" class="form-control" name="departement" placeholder="Nama Departement">
+        <form action="{{ route('departement.store') }}" method="POST">
+            @csrf
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label">Nama Departement</label>
+                    <input type="text" class="form-control" name="nameDepart" placeholder="Nama Departement">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Code Departement</label>
+                    <input type="text" class="form-control" name="codeDepart" placeholder="Code Departement">
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Code Departement</label>
-                <input type="text" class="form-control" name="codeDepart" placeholder="Code Departement">
+            <div class="card-footer">
+                <div class="d-flex">
+                    <a href="{{ route('departement.index') }}" class="btn btn-link">Cancel</a>
+                    <input type="submit" value="Tambah Data" class="btn btn-primary ms-auto">
+                </div>
             </div>
-        </div>
-        <div class="card-footer">
-            <div class="d-flex">
-              <a href="/departement" class="btn btn-link">Cancel</a>
-              <a href="#" class="btn btn-primary ms-auto">Tambah Data</a>
-            </div>
-          </div>
+        </form>
     </div>
     </div>
 

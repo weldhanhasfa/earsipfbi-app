@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class jenisDocument extends Model
 {
-    use HasFactory;
+    protected $fillable = ['jenisDoc', 'keterangan'];
 }

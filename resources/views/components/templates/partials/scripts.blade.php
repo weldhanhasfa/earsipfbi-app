@@ -25,7 +25,7 @@
         })
     })
 </script>
-<script>
+{{-- <script>
     // @formatter:off
     document.addEventListener("DOMContentLoaded", function () {
     	window.Litepicker && (new Litepicker({
@@ -85,6 +85,6 @@
     	}));
     });
     // @formatter:on
-  </script>
+  </script> --}}
   
  @stack('extra-scripts')
